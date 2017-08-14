@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HtmlTwo</title>
+</head>
+<body>
+
+    <h1 align="center">修改个人信息</h1>
+
+    <form method="get">
+        <table align="center" border="1px" cellspacing="0" cellpadding="5px">
+            <tr>
+                <td width="120">姓名：</td>
+                <td width="300">
+                    <input type="text" name="txtName" value="Eric">
+                </td>
+                <td rowspan="7" valign="top" width="200">
+                    <details>
+                        <summary>各项技能指数</summary>
+                        <ul type="none">
+                            <li>
+                                HTML:<meter max="100" value="100" title="100%"></meter>
+                            </li>
+                            <li>
+                                CSS3:<meter max="100" value="90" title="90%"></meter>
+                            </li>
+                            <li>
+                                AJAX:<meter max="100" value="66" title="66%"></meter>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" value="nv" name="rdoGender" checked>女
+                    <input type="radio" value="nan" name="rdoGender">男
+                </td>
+            </tr>
+            <tr>
+                <td>学历：</td>
+                <td>
+                    <select name="selEdu">
+                        <option value="0">其他</option>
+                        <option value="1">专科</option>
+                        <option value="2" selected>本科</option>
+                        <option value="3">硕士</option>
+                        <option value="4">博士及以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">城市：</td>
+                <td>
+                    <select name="selCity" size="5" multiple>
+                        <option value="0">北京</option>
+                        <option value="1">上海</option>
+                        <option value="2">广州</option>
+                        <option value="3">深圳</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">描述：</td>
+                <td>
+                    <textarea name="txtDesc" cols="30" rows="10">这家伙很懒，什么也没有留下...</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="chkPublic">不要公开我的个人信息
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="保存">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
